@@ -1,0 +1,23 @@
+<div class="converter-container">
+    <div class="wrapper">
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="firstAmount" (input)="convertFromFirst()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select [(value)]="firstCurrency" (selectionChange)="onFirstCurrencyChange()">
+          <mat-option *ngFor="let currency of currencyArray" [value]="currency">{{currency}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="wrapper">
+      <mat-form-field>
+        <input matInput type="number" [(ngModel)]="secondAmount" (input)="convertFromSecond()">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select [(value)]="secondCurrency" (selectionChange)="onSecondCurrencyChange()">
+          <mat-option *ngFor="let currency of currencyArray" [value]="currency">{{currency}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  
