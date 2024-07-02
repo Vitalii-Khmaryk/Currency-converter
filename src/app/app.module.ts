@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ConverterComponent } from './components/converter/converter.component';
 import { ExchangeRateService } from './services/exchange-rate.service';
+import { CurrencyConverterFieldComponent } from './components/currency-converter-field/currency-converter-field.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ConverterComponent
+    ConverterComponent,
+    CurrencyConverterFieldComponent
   ],
   imports: [
     BrowserModule,
